@@ -1,15 +1,20 @@
 body {
   margin: 0;
   padding: 0;
+  /* overflow-x: hidden; */
 }
 .Dmain {
+    width: 100%;
+    height: 100%;
     font-family: Arial, sans-serif;
     color: #fff;
-    background-color: #113501;
-    background-image: url(./img/pexels-markus-winkler-1430818-19825351.jpg);
-    background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-image: url(img/pexels-markus-winkler-1430818-19825351.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-attachment: scroll;
 }
+
 .nav{
     width: 100%;
     height: 65px;
@@ -22,7 +27,7 @@ body {
 }
 .divhead{
     width: 30%;
-    padding: 5px;
+    /* padding: 5px; */
 }
 .divbtn{
     width: 70%;
@@ -64,9 +69,6 @@ body {
 .contentdiv{
     width: 100%;
     height: 20%;
-    /* font-size: 98%; */
-    transform: rotate(-2deg);
-
 }
 .imgdiv{
     width: 100%;
@@ -83,24 +85,37 @@ body {
 /* login & Signup */
 .LSmain {
     font-family: Arial, sans-serif;
-    background-color: #113501;
+    background-color: #113501cc;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
+}
+.main{
+    background-image: url(img/pexels-markus-winkler-1430818-19825351.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-attachment: scroll;
+}
+.mainblog{
+    background-image: url(img/pexels-markus-winkler-1430818-19825351.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-attachment: scroll;
+    display: none;
 }
 
 form {
-    background: #ffffffe0;
+    background: #ffffff00;
     padding: 30px;
+    border: 1px solid white;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 320px;
 }
 
 .heading_Login{
-        background: linear-gradient(to left, #236803, #000000);
+        background: linear-gradient(to left, #d9ff81, #ffffff);
         background-clip: text;
         color: transparent;
         text-align: center;
@@ -135,6 +150,34 @@ form {
     font-weight: bold;
     transition: background 0.3s ease;
 }
+.blogbtn {
+    background-image: linear-gradient(to left,#236803,#000000);
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin: 10px;
+    width: 40%;
+    float: right;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+.closebtn{
+    background-color:#ff0000d7;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin: 10px;
+    width: 40%;
+    float: right;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
 
 input[type="submit"]:hover {
     background-image: linear-gradient(to right,#3f3e3e,#000000);
@@ -157,7 +200,7 @@ input[type="submit"]:hover {
 .postdivbtn{
     text-align: center;
 
-    & .DashSubmit{
+    /* & .DashSubmit{
         background-image: linear-gradient(to left,#236803,#000000);
         color: white;
         margin: 10px;
@@ -168,5 +211,44 @@ input[type="submit"]:hover {
         cursor: pointer;
         font-weight: bold;
         transition: background 0.3s ease;
-    }
+    } */
+}
+
+/* Blog page */
+.post_sec{
+    padding: 10px;
+}
+.post{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3f3e3e;
+    border-radius: 20px;
+}
+.post_header{
+    display: flex;
+    align-items: center;
+    
+}
+.post_pro{
+    width: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 100px;
+}
+.post_name{
+    width: 8%;
+    padding: 8px;
+    font-weight: bold;
+}
+.post_titel{
+    padding: 6px;
+}
+.post_date{
+    text-align: right;
+    padding-right: 50px;
+}
+.post_text{
+    padding: 10px;
 }

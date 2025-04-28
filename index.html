@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <title>CRUD Operation || Dashboard</title>
@@ -13,21 +17,23 @@
 </head>
 
 <body>
+    <nav class="nav">
+        <div class="divhead">
+            <h1 class="headingdash">Blog : web</h1>
+        </div>
+        <div class="divbtn">
+            <button  type="submit" class="Dashboardbtn" id="Login_btn" >Login</button>
+            <button  type="submit" class="Dashboardbtn" id="Signup_btn">Sign Up</button>
+            <button  type="submit" class="Dashboardbtn" id="blog_btn"  >Blog</button>
+            <!-- <input class="Dashboardbtn"  id="Login_btn" type="submit" value="Login">
+            <input class="Dashboardbtn"  id="Signup_btn" type="submit" value="Sign Up">
+            <input class="Dashboardbtn"  id="blog_btn"   type="submit" value="Blog"> -->
+        </div>
+    </nav>
     <main class="Dmain">
-        <nav class="nav">
-            <div class="divhead">
-                <h1 class="headingdash">Blog : web</h1>
-            </div>
-            <div class="divbtn">
-                <input class="Dashboardbtn"  id="Login_btn" type="submit" value="Login">
-                <input class="Dashboardbtn"  id="Signup_btn" type="submit" value="Sign Up">
-                <input class="Dashboardbtn"  id="blog_btn" type="submit" value="Blog">
-            </div>
-        </nav>
         <section class="mainSection">
-            <div class="maindiv">
-                <div class="contentdiv">
-                    <marquee class="head_blogtitle" direction="right">Welcome to our Blog : web</marquee>
+            <div class="maindiv ">
+                <div class="contentdiv animate__animated animate__backInLeft animate__delay-1s">
                     <h2 class="head_blogtitle">Welcome to our Blog : web</h2>
                     <p>This is an open platform where you can share your thoughts, skills, and stories with the world.</p>
                     <p>Whether you love to write jokes, heart-touching stories, historical facts, or just want to talk about <br>
@@ -45,11 +51,12 @@
                         So don’t hold back — write, share, and let the world hear your voice. <br>    
                         <em><b>👉 Visit our website regularly and enjoy fresh and interesting blogs!</b></em>
                     </p>
+                    
                     <div class="postdivbtn">
                         <input class="DashSubmit" id="np_btn" type="submit" value="New Post">
                     </div>
                 </div>
-                <div class="imgdiv">
+                <div class="imgdiv animate__animated animate__backInRight  animate__delay-1s">
                     <img class="imgbanner" src="./img/blog.jpg" alt="">
                 </div>
             </div>

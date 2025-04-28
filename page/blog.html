@@ -1,25 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
 
-    <title>Document</title>
+    <title>Blog web || Blog page</title>
 </head>
+
 <body>
-    <main class="LSmain">
-        <form  method="get">
-            <h1 class="heading_Login">New Blog</h1>
-            <input type="email" name="" id="" class="email" placeholder="Enter your title">
-            <br>
-            <textarea style="resize: vertical; " rows="5" id="" class="pass"  placeholder="Enter your description"></textarea>
-            <br>
-            <input type="date" name="" id="browser" placeholder="Enter your date">
-            
-            <br>
-            <input class="lognSign" type="submit" value="Create Blog">
-        </form>
-    </main>
+    <nav class="nav">
+        <div class="divhead">
+            <h1 class="headingdash">Blog : web</h1>
+        </div>
+        <div class="divbtn">
+            <button type="button" class="Dshboardbtn"  id="Videodir_btn">Post Video</button>
+            <button type="button" class="Dshboardbtn"  id="Postdir_btn"> Post Content</button>
+        </div>
+    </nav>
+
+    <div class="mainblog" id="mainblog">
+        <main class="LSmain">
+            <form method="get">
+                <h1 class="heading_Login">New Blog</h1>
+                <input type="email" name="" id="" class="email" placeholder="Enter your title" required>
+                <br>
+                <textarea style="resize: vertical" rows="5" id="" class="pass"
+                    placeholder="Enter your description" required></textarea>
+                <br>
+                <input type="date" name="" id="browser" placeholder="Enter your date" required>
+                <br>
+                <input class="closebtn" id="close" type="submit" value="Close">
+                <input class="blogbtn" type="submit" value="Create Blog">
+            </form>
+        </main>
+    </div>
+
+    <section class="post_sec" id="post_section">
+        <table class="post">
+            <thead>
+                <tr> 
+                    <td rowspan="2" class="post_pro">R</td>
+                    <td class="post_name">Rizwan</td>
+                    <td class="post_titel">naws</td>
+                    <td class="post_date">date</td>
+                </tr>
+            </thead>
+            <tbody>
+                <td colspan="5" class="post_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut consequuntur ipsam reprehenderit, dignissimos beatae nostrum dolorem, et amet incidunt ducimus cupiditate. Nam obcaecati excepturi est impedit culpa dignissimos rerum modi!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi tenetur quia dicta harum facilis est ipsa sed. Et, esse sunt debitis officia porro necessitatibus omnis aperiam, quaerat veritatis fugit nam!
+                </td>
+            </tbody>
+        </table>
+    </section>
+    <script type="module" src="blog.js"></script>
 </body>
+
 </html>
