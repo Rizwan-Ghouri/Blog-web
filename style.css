@@ -1,17 +1,17 @@
 body {
   margin: 0;
   padding: 0;
-  /* overflow-x: hidden; */
+  overflow: hidden;
 }
 .Dmain {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    /* height: 100vh; */
     font-family: Arial, sans-serif;
     color: #fff;
     background-repeat: no-repeat;
     background-image: url(img/pexels-markus-winkler-1430818-19825351.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100vh;
+    background-size: 100% 100%;
     background-attachment: scroll;
 }
 
@@ -27,11 +27,35 @@ body {
 }
 .divhead{
     width: 30%;
-    /* padding: 5px; */
+    padding: 5px;
 }
 .divbtn{
-    width: 70%;
+    width: 100%;
 }
+.divbtn2{
+    width: 100%;
+    display: none;
+}
+.menuicon{
+    width: 100%;
+    display: none;
+}
+.close_btn{
+    width: 50%;
+    background-image: linear-gradient(to left,#236803,#000000);
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    margin-right: 10% ;
+    /* width: 20%; */
+    float: right;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: none;
+    transition: background 0.3s ease;
+} 
 .headingdash{
     width: 60%;
     font-size: xx-large;
@@ -41,20 +65,20 @@ body {
 }
 
 .mainSection{
-    width: 100%;
+    /* width: 100%; */
     height: 89.7vh;
     display: flex;
     /* justify-content: center; */
     align-items: center;
     background-color: #2f750f52;
-
+    background-image: linear-gradient(#184901dc,#000000e3);
 }
 .maindiv{
-    width: 100%;
+    /* width: 100%; */
     height: 95%;
-    padding: 15px;
+    padding: 10px;
     display: flex;
-    background-image: linear-gradient(#184901dc,#000000e3);
+    /* background-image: linear-gradient(#184901dc,#000000e3); */
     font-family: 'Times New Roman', Times, serif;
     /* font-family: "Dancing Script"; */
     font-size: large;
@@ -199,19 +223,6 @@ input[type="submit"]:hover {
 
 .postdivbtn{
     text-align: center;
-
-    /* & .DashSubmit{
-        background-image: linear-gradient(to left,#236803,#000000);
-        color: white;
-        margin: 10px;
-        padding: 10px;
-        width: 20%;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-weight: bold;
-        transition: background 0.3s ease;
-    } */
 }
 
 /* Blog page */
@@ -252,3 +263,164 @@ input[type="submit"]:hover {
 .post_text{
     padding: 10px;
 }
+
+
+@media only screen and (max-width: 900px) {
+    .mainSection{
+        height: fit-content;
+        flex-direction: column;
+        padding-top: 10%;
+    }
+    .maindiv{
+        flex-direction: column;
+    }.contentdiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        font-size: medium;
+    }
+    .divhead{
+        width: 100%;
+        padding: 5px;
+    }
+    .headingdash{
+        width: 100%;
+        font-size: x-large;
+    }
+    .divbtn{
+        width: 100%;
+        display: block;
+    }
+    .divbtn2{
+        width: 100%;
+        display: none;
+        text-align: center;
+        background-image: linear-gradient(to left,#236803,#000000);
+    }
+    .menuicon{
+        width: 100%;
+        display: none;
+    }
+    .Dashboardbtn{
+        background-image: linear-gradient(to left,#236803,#000000);
+        color: white;
+        margin: 10px;
+        padding: 10px;
+        width: 25%;
+        float: right;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.3s ease;
+    }
+   
+  }
+@media only screen and (max-width: 750px) {
+      /* body{
+        overflow-x: hidden;
+    } */
+    .mainSection{
+        height: fit-content;
+        flex-direction: column;
+        padding-top: 10%;
+    }
+    .maindiv{
+        flex-direction: column;
+    }
+    .contentdiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        font-size: medium;
+    }
+    .divhead{
+        width: 100%;
+        padding: 5px;
+    }
+    .headingdash{
+        width: 100%;
+        font-size: x-large;
+    }
+    .divbtn{
+        width: 100%;
+        display: block;
+    }
+    .divbtn2{
+        width: 100%;
+        display: none;
+        text-align: center;
+        background-image: linear-gradient(to left,#236803,#000000);
+    }
+    .menuicon{
+        width: 100%;
+        display: none;
+    }
+    .Dashboardbtn{
+        background-image: linear-gradient(to left,#236803,#000000);
+        color: white;
+        margin: 10px;
+        padding: 10px;
+        width: 25%;
+        float: right;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.3s ease;
+    }
+   
+  }
+
+@media(max-width: 600px) {
+    /* body{
+        overflow-x: hidden;
+    } */
+    .mainSection{
+        width: 100dvw;
+        height: fit-content;
+        flex-direction: column;
+        padding-top: 10%;
+    }
+    .maindiv{
+        flex-direction: column;
+    }
+    .contentdiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        font-size: small;
+    }
+    .divhead{
+        width: 100%;
+        padding: 5px;
+    }
+    .headingdash{
+        width: 100%;
+        font-size: x-large;
+    }
+    .divbtn{
+        width: 100%;
+        display: none;
+    }
+    .divbtn2{
+        width: 100%;
+        display: none;
+        text-align: center;
+        background-image: linear-gradient(to left,#236803,#000000);
+    }
+    .menuicon{
+        width: 100%;
+        display: block;
+    }
+    .Dashboardbtn2{
+        width: 80%;
+        background-image: linear-gradient(to left,#236803,#000000);
+        color: #fff;
+        padding: 2%;
+        margin: 2%;
+    } 
+  }
