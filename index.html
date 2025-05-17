@@ -1,76 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
     <title>CRUD Operation || Dashboard</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <nav class="nav">
-        <div class="divhead">
-            <h1 class="headingdash">Blog : web</h1>
+      <div class="divhead">
+        <a class="a" href="index.html">
+          <h1 class="headingdash">Blog : web</h1>
+        </a>
+      </div>
+      <div class="divbtn" id="divbtn">
+        <button type="submit" class="Dashboardbtn" id="Login_btn">Login</button>
+        <button type="submit" class="Dashboardbtn" id="Signup_btn">
+          Sign Up
+        </button>
+        <button type="submit" class="Dashboardbtn" id="blog_btn">Blog</button>
+      </div>
+      <div class="menuicon" id="menuicon">
+        <button
+          type="submit"
+          style="display: block"
+          class="close_btn"
+          id="menu_btn"
+        >
+          ☰
+        </button>
+        <button type="submit" class="close_btn" id="close_btn">X</button>
+      </div>
+    </nav>
+    <main class="Dmain">
+      <div class="divbtn2" id="divbtn2">
+        <button type="submit" class="Da shboardbtn2" id="blog_btn1">
+          Blog
+        </button>
+        <button type="submit" class="Dashboardbtn2" id="Signup_btn1">
+          Sign Up
+        </button>
+        <button type="submit" class="Dashboardbtn2" id="Login_btn1">
+          Login
+        </button>
+      </div>
+      <section class="mainSection">
+        <div
+          class="imgdiv animate__animated animate__backInRight animate__delay-1s"
+        >
+          <img class="imgbanner" src="./img/blog.jpg" alt="" />
         </div>
-        <div class="divbtn" id="divbtn">
-            <button  type="submit" class="Dashboardbtn" id="Login_btn" >Login</button>
-            <button  type="submit" class="Dashboardbtn" id="Signup_btn">Sign Up</button>
-            <button  type="submit" class="Dashboardbtn" id="blog_btn"  >Blog</button>
-        </div>
-        <div class="menuicon" id="menuicon">
-            <button  type="submit" style="display: block;" class="close_btn" id="menu_btn"  >☰</button>
-            <button  type="submit" class="close_btn" id="close_btn"  >X</button>
+        <div class="maindiv">
+          <div
+            class="contentdiv animate__animated animate__backInLeft animate__delay-1s"
+          >
+            <h2 class="head_blogtitle">Welcome to our Blog : web</h2>
+            <p>
+              This is an open platform where you can share your thoughts,
+              skills, and stories with the world.
+            </p>
+            <p>
+              Whether you love to write jokes, heart-touching stories,
+              historical facts, or just want to talk about <br />
+              <strong>yourself — this is your space!</strong>
+            </p>
+            <h3 class="head2">💡 What can you write here?</h3>
+            <ul>
+              <li>"Funny jokes that make everyone laugh"😄</li>
+              <li>"True or fictional stories"📖</li>
+              <li>"History-related posts that educate and inform" 📚</li>
+              <li>"Life experiences or your personal introduction" ✨</li>
+              <li>"And any other text content you’d love to share!"</li>
+            </ul>
+            <p>
+              Every word you write inspires someone out there. So don’t hold
+              back — write, share, and let the world hear your voice. <br />
+              <em
+                ><b
+                  >👉 Visit our website regularly and enjoy fresh and
+                  interesting blogs!</b
+                ></em
+              >
+            </p>
+
+            <div class="postdivbtn">
+              <input
+                style="display: block"
+                class="close_btn"
+                id="np_btn"
+                type="submit"
+                value="New Post"
+              />
+            </div>
           </div>
-        </nav>
-        <main class="Dmain">
-            <div class="divbtn2" id="divbtn2">
-                <button  type="submit" class="Dashboardbtn2" id="blog_btn1"  >Blog</button>
-                <button  type="submit" class="Dashboardbtn2" id="Signup_btn1">Sign Up</button>
-                <button  type="submit" class="Dashboardbtn2" id="Login_btn1" >Login</button>
-            </div>
-            <section class="mainSection">
-            <div class="imgdiv animate__animated animate__backInRight  animate__delay-1s">
-                <img class="imgbanner" src="./img/blog.jpg" alt="">
-            </div>
-            <div class="maindiv ">
-                <div class="contentdiv animate__animated animate__backInLeft animate__delay-1s">
-                    <h2 class="head_blogtitle">Welcome to our Blog : web</h2>
-                    <p>This is an open platform where you can share your thoughts, skills, and stories with the world.</p>
-                    <p>Whether you love to write jokes, heart-touching stories, historical facts, or just want to talk about <br>
-                    <strong>yourself — this is your space!</strong></p>
-                    <h3 class="head2">💡 What can you write here?</h3>
-                    <ul>
-                        <li>"Funny jokes that make everyone laugh"😄 </li>
-                        <li>"True or fictional stories"📖 </li>
-                        <li>"History-related posts that educate and inform" 📚</li>
-                        <li>"Life experiences or your personal introduction" ✨</li>
-                        <li>"And any other text content you’d love to share!"</li>
-                    </ul>
-                    <p>           
-                        Every word you write inspires someone out there.
-                        So don’t hold back — write, share, and let the world hear your voice. <br>    
-                        <em><b>👉 Visit our website regularly and enjoy fresh and interesting blogs!</b></em>
-                    </p>
-                    
-                    <div class="postdivbtn">
-                        <input style="display: block;" class="close_btn" id="np_btn" type="submit" value="New Post">
-                    </div>
-                </div>
-            </div>
-            
-        </section>
+        </div>
+      </section>
     </main>
 
     <script type="module" src="app.js"></script>
-</body>
-
+  </body>
 </html>
