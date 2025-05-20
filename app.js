@@ -34,7 +34,7 @@ blogbtn1.addEventListener("click" ,()=>{
 let divbtn = document.getElementById("divbtn");
 let menu_btn = document.getElementById("menu_btn");
 let close_btn = document.getElementById("close_btn");
-let divbtn2 = document.getElementById("divbtn2");
+let divbtn2 = document.getElementById("divbtn2","divbtn");
 
 
 

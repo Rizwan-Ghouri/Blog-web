@@ -1,13 +1,16 @@
 body {
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
+  overflow-x: hidden;
+  /* width: 100%;
+  max-width: 1024px; */
+
 }
 .divbtn2 {
   display: none;
 }
 .Dmain {
-  width: 100vw;
+  width: 100dvw;
   /* height: 100vh; */
   font-family: Arial, sans-serif;
   color: #fff;
@@ -36,6 +39,8 @@ body {
 }
 .divbtn2 {
   width: 100%;
+  padding: 0%;
+  margin: 0%;
   display: none;
 }
 .menuicon {
@@ -318,9 +323,9 @@ input[type="submit"]:hover {
   }
 }
 @media only screen and (max-width: 750px) {
-  /* body{
+  body{
         overflow-x: hidden;
-    } */
+    }
   .mainSection {
     height: fit-content;
     flex-direction: column;
