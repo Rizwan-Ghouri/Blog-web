@@ -7,10 +7,10 @@ let blogbtn = document.getElementById("blog_btn");
 let blogbtn1 = document.getElementById("blog_btn1");
 
 loginbtn.addEventListener("click" ,()=>{
-    window.location.href = "/page/login.html";
+    location.href = "/page/login.html";
 })
 loginbtn1.addEventListener("click" ,()=>{
-    window.location.href = "/page/login.html";
+    location.href = "/page/login.html";
 })
 
 signupbtn.addEventListener("click" ,()=>{
