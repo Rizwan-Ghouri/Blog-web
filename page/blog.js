@@ -1,18 +1,33 @@
-let Postdir_btn = document.getElementById("Postdir_btn");
+let contentPost_btn = document.querySelector("#Contentpost_btn");
 let mainblog = document.getElementById("mainblog");
-let closebtn = document.getElementById("close");
+let confrmclose = document.getElementById("close");
+let menu_btn = document.getElementById("menu_btn");
+let close_btn = document.getElementById("close_btn");
 
 
-Postdir_btn.addEventListener("click" ,()=>{
+contentPost_btn.addEventListener("click" ,()=>{
     // mainblog.style.display = 'block'
     if (mainblog.style.display = 'none') {
         mainblog.style.display = 'block'
-
     }else  if (mainblog.style.display = 'block') {
         mainblog.style.display = 'none'
     }
 })
 
-closebtn.addEventListener("click",()=>{
+confrmclose.addEventListener("click",()=>{
     mainblog.style.display = "none";
+})
+
+menu_btn.addEventListener("click",()=>{
+    divbtn2.style.display = "block"
+    close_btn.style.display = "block"
+    menu_btn.style.display = "none"
+})
+
+close_btn.addEventListener("click",()=>{
+    if (menu_btn.style.display = "none") {
+        divbtn2.style.display = "none"
+        close_btn.style.display = "none"
+        menu_btn.style.display = "block"
+    }
 })
