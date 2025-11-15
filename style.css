@@ -43,7 +43,6 @@ body {
   display: none;
 }
 .Dashboardbtn2 {
-    /* width: 100%; */
     display: none;
     text-align: center;
     background-image: linear-gradient(to left, #236803, #000000);
