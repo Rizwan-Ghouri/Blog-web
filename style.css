@@ -114,11 +114,11 @@ body {
   overflow: hidden;
 }
 .imgbanner {
-  width: 50%;
-  height: 60%;
+  width: 80%;
+  /* height: 60%; */
   transform: rotate(5deg);
 }
-/* login & Signup */
+/** login & Signup **/
 .LSmain {
   font-family: Arial, sans-serif;
   background-color: #113501cc;
@@ -411,7 +411,7 @@ input[type="submit"]:hover {
     }
   .mainSection {
     width: 100dvw;
-    height: fit-content;
+    /* height: fit-content; */
     flex-direction: column;
     padding-top: 3%;
   }
@@ -419,6 +419,10 @@ input[type="submit"]:hover {
     width: 80%;
     flex-direction: column;
   }
+  .imgbanner {
+  width: 100%;
+  transform: rotate(5deg);
+}
   .contentdiv {
     width: 100%;
     display: flex;
