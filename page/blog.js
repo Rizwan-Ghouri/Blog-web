@@ -6,8 +6,11 @@ let close_btn = document.getElementById("close_btn");
 
 contentPost_btn.forEach((val) => {
   val.addEventListener("click", () => {
-    mainblog.style.display =
-      mainblog.style.display === "none" ? "block" : "none";
+    if ((mainblog.style.display = "none")) {
+      mainblog.style.display = "block";
+    } else if ((mainblog.style.display = "block")) {
+      mainblog.style.display = "none";
+    }
   });
 });
 
