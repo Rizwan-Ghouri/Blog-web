@@ -4,7 +4,6 @@ body {
   overflow-x: hidden;
   /* width: 100%;
   max-width: 1024px; */
-
 }
 .divbtn2 {
   display: none;
@@ -43,10 +42,10 @@ body {
   display: none;
 }
 .Dashboardbtn2 {
-    display: none;
-    text-align: center;
-    background-image: linear-gradient(to left, #236803, #000000);
-  }
+  display: none;
+  text-align: center;
+  background-image: linear-gradient(to left, #236803, #000000);
+}
 .menuicon {
   width: 100%;
   display: none;
@@ -276,7 +275,7 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (max-width: 950px) {
-  *{
+  * {
     overflow-x: hidden;
   }
   .mainSection {
@@ -288,7 +287,7 @@ input[type="submit"]:hover {
     width: 90%;
     flex-direction: column;
   }
-  .imgdiv{
+  .imgdiv {
     width: 80%;
   }
   .contentdiv {
@@ -340,9 +339,9 @@ input[type="submit"]:hover {
   }
 }
 @media only screen and (max-width: 750px) {
-  body{
-        overflow-x: hidden;
-    }
+  body {
+    overflow-x: hidden;
+  }
   .mainSection {
     height: fit-content;
     flex-direction: column;
@@ -352,7 +351,7 @@ input[type="submit"]:hover {
     width: 80%;
     flex-direction: column;
   }
-  .imgdiv{
+  .imgdiv {
     width: 80%;
   }
   .contentdiv {
@@ -406,9 +405,9 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 600px) {
-  *{
-        overflow-x: hidden;
-    }
+  * {
+    overflow-x: hidden;
+  }
   .mainSection {
     width: 100dvw;
     /* height: fit-content; */
@@ -416,13 +415,13 @@ input[type="submit"]:hover {
     padding-top: 3%;
   }
   .maindiv {
-    width: 80%;
+    width: 100%;
     flex-direction: column;
   }
   .imgbanner {
-  width: 100%;
-  transform: rotate(5deg);
-}
+    width: 100%;
+    transform: rotate(5deg);
+  }
   .contentdiv {
     width: 100%;
     display: flex;
