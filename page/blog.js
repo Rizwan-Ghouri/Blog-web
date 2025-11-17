@@ -14,6 +14,7 @@ contentPost_btn.forEach((val) => {
   });
 });
 
+
 confrmclose.addEventListener("click", () => {
   mainblog.style.display = "none";
 });
