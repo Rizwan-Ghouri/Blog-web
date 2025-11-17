@@ -1,6 +1,4 @@
-let contentPost_btn = document.querySelectorAll(
-  "#Contentpost_btn,#Contentpost_btn1"
-);
+let contentPost_btn = document.querySelectorAll("#Contentpost_btn , #Contentpost_btn1");
 let mainblog = document.getElementById("mainblog");
 let confrmclose = document.getElementById("close");
 let menu_btn = document.getElementById("menu_btn");
