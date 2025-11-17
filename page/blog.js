@@ -1,4 +1,4 @@
-let contentPost_btn = document.querySelector("#Contentpost_btn","#Contentpost_btn1");
+let contentPost_btn = document.querySelectorAll("#Contentpost_btn","#Contentpost_btn1");
 let mainblog = document.getElementById("mainblog");
 let confrmclose = document.getElementById("close");
 let menu_btn = document.getElementById("menu_btn");
@@ -6,7 +6,6 @@ let close_btn = document.getElementById("close_btn");
 
 
 contentPost_btn.addEventListener("click" ,()=>{
-    // mainblog.style.display = 'block'
     if (mainblog.style.display = 'none') {
         mainblog.style.display = 'block'
     }else  if (mainblog.style.display = 'block') {
