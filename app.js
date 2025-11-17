@@ -14,10 +14,10 @@ loginbtn1.addEventListener("click", () => {
 });
 
 signupbtn.addEventListener("click", () => {
-  location.href = "page/Signup.html";
+  location.href = "page/signup.html";
 });
 signupbtn1.addEventListener("click", () => {
-  location.href = "page/Signup.html";
+  location.href = "page/signup.html";
 });
 
 npbtn.addEventListener("click", () => {
